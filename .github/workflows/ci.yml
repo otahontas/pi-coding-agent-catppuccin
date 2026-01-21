@@ -1,4 +1,4 @@
-name: Verify Catppuccin Colors
+name: CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  verify:
+  ci:
     runs-on: ubuntu-latest
 
     steps:
