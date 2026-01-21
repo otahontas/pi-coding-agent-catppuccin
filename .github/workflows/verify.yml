@@ -1,0 +1,33 @@
+name: Verify Catppuccin Colors
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    
+    - name: Run color verification
+      run: python3 verify-catppuccin-colors.py
+    
+    - name: Verify all theme files exist
+      run: |
+        for flavor in latte frappe macchiato mocha; do
+          if [ ! -f "catppuccin-${flavor}.json" ]; then
+            echo "❌ Missing catppuccin-${flavor}.json"
+            exit 1
+          fi
+        done
+        echo "✅ All theme files present"
