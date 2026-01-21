@@ -8,9 +8,10 @@
 
 ## Installation
 
-1. Copy the theme files to your Pi themes directory:
+1. Clone the repo and copy the theme files to your Pi themes directory:
    ```bash
-   cp catppuccin-*.json ~/.pi/agent/themes/
+   git clone https://github.com/otahontas/pi-coding-agent-catppuccin.git /tmp/pi-catppuccin && \
+   cp /tmp/pi-catppuccin/catppuccin-*.json ~/.pi/agent/themes/
    ```
 
 2. Select a theme in Pi:
