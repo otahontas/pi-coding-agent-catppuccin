@@ -1,6 +1,7 @@
 # Pi coding agent - Catppuccin themes
 
 [Catppuccin](https://catppuccin.com/) themes for the [Pi coding agent](https://github.com/badlogic/pi-mono):
+
 - 🌻 **Latte** (Light theme)
 - 🪴 **Frappé** (Dark theme)
 - 🌺 **Macchiato** (Dark theme)
@@ -9,6 +10,7 @@
 ## Installation
 
 1. Clone the repo and copy the theme files to your Pi themes directory:
+
    ```bash
    git clone https://github.com/otahontas/pi-coding-agent-catppuccin.git /tmp/pi-catppuccin && \
    cp /tmp/pi-catppuccin/catppuccin-*.json ~/.pi/agent/themes/
@@ -18,7 +20,6 @@
    - Run `pi` to start the coding agent
    - Type `/settings` to open the settings menu
    - Select the theme option and choose `catppuccin-mocha` (or latte/frappe/macchiato)
-
 
 ## Design notes
 

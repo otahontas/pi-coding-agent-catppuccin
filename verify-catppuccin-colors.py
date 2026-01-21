@@ -96,7 +96,7 @@ def print_flavor_report(flavor, official, theme, mismatches):
     print("-" * 80)
     
     if theme is None:
-        print(f"   Status: ⚠️  SKIPPED - Theme file not found")
+        print("   Status: ⚠️  SKIPPED - Theme file not found")
         return False
     
     print(f"   Colors verified: {color_count}")
@@ -110,7 +110,7 @@ def print_flavor_report(flavor, official, theme, mismatches):
                 print(f"      • {issue['color']}: {issue['theme']} → should be {issue['official']}")
         return False
     else:
-        print(f"   Status: ✅ PASSED - All colors correct")
+        print("   Status: ✅ PASSED - All colors correct")
         return True
 
 
