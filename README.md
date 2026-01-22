@@ -11,7 +11,19 @@
 
 ### Nix
 
-A `flake.nix` is provided with a Home Manager module. Add this repo as a flake input and enable `programs.pi.catppuccin.enable = true` in your configuration.
+Add as a flake input and enable in Home Manager:
+
+```nix
+programs.pi.catppuccin.enable = true;
+```
+
+Automatically follows `catppuccin.flavor` from [catppuccin/nix](https://github.com/catppuccin/nix) if enabled. Otherwise set flavor explicitly:
+
+```nix
+programs.pi.catppuccin.flavor = "macchiato";  # latte, frappe, macchiato, or mocha
+```
+
+The theme is automatically installed and activated in Pi's settings.
 
 ### Manual Installation
 
