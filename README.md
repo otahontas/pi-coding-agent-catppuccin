@@ -9,6 +9,12 @@
 
 ## Installation
 
+### Nix
+
+A `flake.nix` is provided with a Home Manager module. Add this repo as a flake input and enable `programs.pi.catppuccin.enable = true` in your configuration.
+
+### Manual Installation
+
 1. Clone the repo and copy the theme files to your Pi themes directory:
 
    ```bash
