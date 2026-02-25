@@ -1,3 +1,18 @@
+# devenv-base gitignore start
+.devenv*
+.direnv
+.pre-commit-config.yaml
+.claude/
+.mcp.json
+.pi/mcp.json
+devenv.local.nix
+devenv.local.yaml
+result
+# devenv-base gitignore end
+
+
+
+
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 

@@ -77,7 +77,7 @@
 
             package = mkOption {
               type = types.package;
-              default = self.packages.${pkgs.stdenv.hostPlatform.system}.default;
+              inherit (self.packages.${pkgs.stdenv.hostPlatform.system}) default;
               description = "The pi-catppuccin-themes package to use";
             };
           };

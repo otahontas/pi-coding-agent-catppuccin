@@ -16,6 +16,21 @@
         "type": "github"
       }
     },
+    "devenv-base": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1772017820,
+        "owner": "otahontas",
+        "repo": "devenv-base",
+        "rev": "203ea50be3e3416340ef9b25d2cef710d2dbcb78",
+        "type": "github"
+      },
+      "original": {
+        "owner": "otahontas",
+        "repo": "devenv-base",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -73,11 +88,30 @@
       }
     },
     "nixpkgs": {
+      "inputs": {
+        "nixpkgs-src": "nixpkgs-src"
+      },
       "locked": {
-        "lastModified": 1768875095,
+        "lastModified": 1770434727,
+        "owner": "cachix",
+        "repo": "devenv-nixpkgs",
+        "rev": "8430f16a39c27bdeef236f1eeb56f0b51b33d348",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cachix",
+        "ref": "rolling",
+        "repo": "devenv-nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771923393,
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ed142ab1b3a092c4d149245d0c4126a5d7ea00b0",
+        "rev": "ea7f1f06811ce7fcc81d6c6fd4213150c23edcf2",
         "type": "github"
       },
       "original": {
@@ -105,6 +139,7 @@
     "root": {
       "inputs": {
         "devenv": "devenv",
+        "devenv-base": "devenv-base",
         "git-hooks": "git-hooks",
         "nixpkgs": "nixpkgs",
         "pre-commit-hooks": [
