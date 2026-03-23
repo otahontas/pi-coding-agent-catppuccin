@@ -1,0 +1,22 @@
+{
+  "name": "pi-coding-agent-catppuccin",
+  "version": "1.0.0",
+  "description": "Catppuccin themes for the Pi coding agent",
+  "keywords": [
+    "pi-package",
+    "catppuccin"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otahontas/pi-coding-agent-catppuccin.git"
+  },
+  "pi": {
+    "themes": [
+      "./catppuccin-frappe.json",
+      "./catppuccin-latte.json",
+      "./catppuccin-macchiato.json",
+      "./catppuccin-mocha.json"
+    ]
+  }
+}

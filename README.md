@@ -9,6 +9,14 @@
 
 ## Installation
 
+### Pi package manager
+
+```bash
+pi install git:github.com/otahontas/pi-coding-agent-catppuccin
+```
+
+Then select a theme in Pi via `/settings`.
+
 ### Nix
 
 Add as a flake input and enable in Home Manager:
@@ -25,19 +33,16 @@ programs.pi.catppuccin.flavor = "macchiato";  # latte, frappe, macchiato, or moc
 
 The theme is automatically installed and activated in Pi's settings.
 
-### Manual Installation
+### Manual
 
-1. Clone the repo and copy the theme files to your Pi themes directory:
+1. Clone the repo and copy theme files to your Pi themes directory:
 
    ```bash
    git clone https://github.com/otahontas/pi-coding-agent-catppuccin.git /tmp/pi-catppuccin && \
    cp /tmp/pi-catppuccin/catppuccin-*.json ~/.pi/agent/themes/
    ```
 
-2. Select a theme in Pi:
-   - Run `pi` to start the coding agent
-   - Type `/settings` to open the settings menu
-   - Select the theme option and choose `catppuccin-mocha` (or latte/frappe/macchiato)
+2. Select a theme in Pi via `/settings`.
 
 ## Design notes
 
